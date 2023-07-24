@@ -15,7 +15,7 @@
 #   - stellar：stellar主题
 # 支持配置多个友链页面并指定不同主题策略，每个用{}分隔，它们会被同时爬取，数据保存在一起。
 LINK: [
-     { link: "https://blog.qiaoxiao.top/link/", theme: "butterfly" },  # 友链页地址1，修改为你的友链页地址
+#     { link: "https://blog.qiaoxiao.top/link/", theme: "butterfly" },  # 友链页地址1，修改为你的友链页地址
 #     { link: "https://noionion.top/link/", theme: "butterfly" }, # 友链页地址2
 #     { link: "https://immmmm.com/about/", theme: "common1" }, # 友链页地址3
 #     ...
@@ -30,12 +30,18 @@ LINK: [
 #       avatar：必填，头像地址
 #       suffix：选填，自定义订阅后缀，主要针对不规范的网站订阅后缀，见示例2
 SETTINGS_FRIENDS_LINKS: {
-    enable: false,
+    enable: true,
     json_api: "",
     list: [
         # 示例1：
-        ["贰猹の小窝", "https://noionion.top/", "https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg"],
-        ["Akilarの糖果屋", "https://akilar.top/", "https://akilar.top/images/headimage.png"],
+        ["风起星辰", "https://blog.qiaoxiao.top/", "https://npm.elemecdn.com/yanblog-link@1.0.0/avatar.webp"],
+        ["杜老师说", "https://dusays.com/", "https://cdn.dusays.com/avatar.png"],
+        ["神经蛙", "https://hexo.sjava.cn/", "https://hexo.sjava.cn/img/pic.png"],
+        ["葱苓", "https://blog.itciraos.cn/", "https://cdn.jsdelivr.net/gh/ciraos/ciraos-static@main/img/avatar1.webp"],
+        ["Leonus", "https://blog.leonus.cn/", "https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5"],
+        ["铭心石刻", "https://blog.kouseki.cn/", "https://blog.kouseki.cn/imgs/avatar.webp"],
+        ["青桔气球", "https://blog.qjqq.cn/", "https://avatar.qjqq.cn/1/646cdb372913c.webp!avatar"],
+        ["满心Heo", "https://blog.lovelu.top/", "https://bu.dusays.com/2023/01/29/63d5bf7fa0d2c.png"],
         # 示例2：使用suffix的配置如下
         # 程序目前自动获取 "atom.xml", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml" 这些后缀
         # 如果目标地址的后缀不在其中，就可以在这里添加
